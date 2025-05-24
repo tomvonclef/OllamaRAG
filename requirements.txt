@@ -1,0 +1,12 @@
+streamlit>=1.24.0
+python-dotenv>=1.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+umap-learn>=0.5.3
+plotly>=5.15.0
+sentence-transformers>=2.2.2
+chromadb>=0.4.2
+langchain>=0.0.300
+PyMuPDF>=1.23.4
+requests>=2.31.0
+docx2txt>=0.8               # optional, only if you need .docx support
