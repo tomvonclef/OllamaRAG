@@ -1,7 +1,7 @@
 # RAG Explorer with ChromaDB
 
 ## Overview
-This is a full-featured Retrieval-Augmented Generation (RAG) application that utilizes ChromaDB, HuggingFace embeddings, and the Ollama LLM (Qwen). The application allows users to upload documents, extract text, chunk the text, and perform queries to retrieve relevant information.
+This is a simple Retrieval-Augmented Generation (RAG) application that utilizes ChromaDB, HuggingFace embeddings, and the Ollama LLM (Qwen). The application allows users to upload documents, extract text, chunk the text, and perform queries to retrieve relevant information. It has been tested on MacOS but should work on other systems.
 
 ## Features
 - **Document Ingestion**: Upload `.txt` or `.pdf` files to extract text.
@@ -33,15 +33,16 @@ This is a full-featured Retrieval-Augmented Generation (RAG) application that ut
 
 2. Install the required packages:
    ```bash
-   pip install -r requirements.txt
+   uv venv
+   uv sync
    ```
 
-3. Ensure that the Ollama API is running locally.
+3. Ensure that the Ollama API is running locally and the qwen model is installed.
 
 ## Usage
 1. Run the Streamlit application:
    ```bash
-   streamlit run knowledge_assistant.py
+   uv run streamlit run app.py
    ```
 
 2. Upload a document and follow the on-screen instructions to interact with the RAG system.
@@ -50,7 +51,6 @@ This is a full-featured Retrieval-Augmented Generation (RAG) application that ut
 - **OLLAMA_MODEL**: Set the Ollama model to use (default: `qwen3`).
 - **OLLAMA_URL**: Set the URL for the Ollama API.
 - **EMBED_MODEL**: Specify the embedding model to use (default: `all-MiniLM-L6-v2`).
-- **CHROMA_DIR**: Directory for storing the Chroma vector store.
 
 ## License
 This project is licensed under the MIT License.

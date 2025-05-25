@@ -1,0 +1,23 @@
+{
+    "cSpell.words": [
+        "chromadb",
+        "deepseek",
+        "dotenv",
+        "embedder",
+        "excvalue",
+        "fitz",
+        "huggingface",
+        "langchain",
+        "numpy",
+        "OLLAMA",
+        "ollamarag",
+        "plotly",
+        "pycache",
+        "pymupdf",
+        "qwen",
+        "streamlit",
+        "umap",
+        "vectorstores",
+        "venv"
+    ]
+}
