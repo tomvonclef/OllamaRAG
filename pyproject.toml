@@ -1,0 +1,23 @@
+[project]
+name = "ollamarag"
+version = "0.1.0"
+description = "RAG Explorer with ChromaDB"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=0.4.2",
+    "docx2txt>=0.8",
+    "langchain>=0.0.300",
+    "langchain-community>=0.3.24",
+    "langchain-huggingface>=0.2.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "plotly>=5.15.0",
+    "pymupdf>=1.23.4",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "sentence-transformers>=2.2.2",
+    "streamlit>=1.24.0",
+    "umap-learn>=0.5.3",
+    "watchdog>=6.0.0",
+]
