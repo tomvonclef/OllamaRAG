@@ -29,9 +29,12 @@ st.set_page_config(layout="wide", page_title="🧠 RAG Explorer with ChromaDB")
 st.title("🧠 Fantastic RAG Explorer (ChromaDB + Qwen via Ollama)")
 
 st.sidebar.header("⚙️ RAG Settings")
-chunk_size = st.sidebar.slider("Chunk Size", 100, 1000, DEFAULT_CHUNK_SIZE, step=100)
-chunk_overlap = st.sidebar.slider("Chunk Overlap", 0, 200, DEFAULT_CHUNK_OVERLAP, step=10)
-show_umap = st.sidebar.checkbox("📊 Show Embedding Visualization", value=DEFAULT_SHOW_UMAP)
+chunk_size = st.sidebar.slider(
+    "Chunk Size", 100, 1000, DEFAULT_CHUNK_SIZE, step=100)
+chunk_overlap = st.sidebar.slider(
+    "Chunk Overlap", 0, 200, DEFAULT_CHUNK_OVERLAP, step=10)
+show_umap = st.sidebar.checkbox(
+    "📊 Show Embedding Visualization", value=DEFAULT_SHOW_UMAP)
 step_explain = st.sidebar.checkbox("🧩 Explain Steps", value=True)
 
 uploaded_file = st.file_uploader(
